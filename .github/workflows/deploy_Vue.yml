@@ -8,19 +8,19 @@ on:
     branches: [ deploy ]
 
 jobs:
-  deploy:
+  build-and-deploy:
+    name: Build an Deploy Vue.js App
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version:  '12.x'
-      - name: list
-        run: ls -a
-      - name: Install Dependencies
-        run: npm install
-      - name: Build Vue Application
-        run: npm run build
+      - name: Install Dependencies ans build
+        run: |
+          npm install
+          npm run build
       - name: Deploy VueJS app
         uses: appleboy/scp-action@master
         with:
