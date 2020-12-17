@@ -1,7 +1,17 @@
 $primary: #8ec647;
 $primary-25: rgba(142, 198, 71, .25);
 
+$small-size: 0.5rem;
+$regular-size: 1rem;
+$medium-size: 1.5rem;
+$large-size: 2rem;
+
 $secondary: #434343;
 $secondary-75: rgba(67, 67, 67, 0.75);
 $secondary-50: rgba(67, 67, 67, 0.50);
 $secondary-25: rgba(67, 67, 67, 0.25);
+
+// Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap';
+// BootstrapVue and its default variables
+@import '~bootstrap-vue/src/index.scss';
