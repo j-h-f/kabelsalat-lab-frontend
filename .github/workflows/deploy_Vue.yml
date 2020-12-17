@@ -11,16 +11,19 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version:  '12.x'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build Vue Application
+        run: npm run build
       - name: Deploy VueJS app
-        uses: appleboy/ssh-action@v0.1.2
+        uses: appleboy/scp-action@master
         with:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USERNAME}}
           password: ${{secrets.SSH_PASSWORD}} 
-          script: |
-            cd ~/kabelsalat-lab/kabelsalat-lab-frontend
-            git checkout deploy
-            git pull
-            npm install
-            npm run build
-            cp -r dist/* /var/www/kabelsalat
+          source: ./dist
+          target: /var/www/kabelsalat
