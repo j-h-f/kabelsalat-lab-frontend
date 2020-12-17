@@ -33,8 +33,8 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import "../global/global.scss";
+<style lang="scss">
+@import "@/global/global.scss";
 
 article {
   background: $primary-25;
