@@ -29,3 +29,4 @@ jobs:
           password: ${{secrets.SSH_PASSWORD}} 
           source: ./dist/*
           target: /var/www/kabelsalat
+          strip_components: 1
