@@ -22,7 +22,10 @@
           />
           <figcaption>
             Bildquelle:
-            https://www.trees.com/gardening-and-landscaping/vertical-hydroponics
+            <a
+              href="https://www.trees.com/gardening-and-landscaping/vertical-hydroponics"
+              >https://www.trees.com/gardening-and-landscaping/vertical-hydroponics</a
+            >
           </figcaption>
         </figure>
       </div>
@@ -31,13 +34,18 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../global/global.scss";
+
 article {
+  background: $primary-25;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #8ec647;
+  border: 4px solid $primary;
+  border-radius: 10px;
+  box-shadow: 2px 2px $secondary-75;
   font-size: 1.5em;
-  color: #434343;
+  color: $secondary;
   display: flex;
 }
 </style>

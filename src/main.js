@@ -5,6 +5,8 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+document.title = "KabelSalat"
+
 new Vue({
   router,
   store,
