@@ -27,5 +27,5 @@ jobs:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USERNAME}}
           password: ${{secrets.SSH_PASSWORD}} 
-          source: ./dist
+          source: ./dist/*
           target: /var/www/kabelsalat
