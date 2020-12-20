@@ -2,6 +2,7 @@
   <div id="app">
     <NavigationBar />
     <router-view class="main-view" />
+    <!-- this is a test comment -->
   </div>
 </template>
 
@@ -24,7 +25,7 @@ export default {
   color: $secondary;
   display: flex;
   flex-flow: column;
-  
+
 }
 
 .main-view {
