@@ -22,9 +22,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $secondary;
+  display: flex;
+  flex-flow: column;
+  
 }
 
 .main-view {
-  height: 100vh;
+  // height: 100vh;
+  margin-top: $header-size;
+  padding: 0 auto;
 }
 </style>

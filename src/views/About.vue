@@ -16,7 +16,7 @@
       </div>
       <div>
         <figure>
-          <img
+          <img class="image"
             src="https://www.trees.com/sites/default/files/inline-images/vertical-hydroponics.png"
             alt="Hydroponisches Gewächshaus"
           />
@@ -47,5 +47,10 @@ article {
   font-size: 1.5em;
   color: $secondary;
   display: flex;
+  flex-flow: column;
+}
+
+.image {
+  width: 100%;
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.svg" width="400px" />
-    <LandingPage msg="Wilkommen bei Kabelsalat" />
+    <div class="image-container">
+      <img class="landing-page-logo" alt="Vue logo" src="../assets/logo.svg" />
+      <LandingPage msg="Wilkommen bei Kabelsalat" />
+    </div>
   </div>
 </template>
 
@@ -13,6 +15,18 @@ export default {
   name: "Home",
   components: {
     LandingPage,
-  }
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-logo {
+  width: 50%;
+}
+</style>
