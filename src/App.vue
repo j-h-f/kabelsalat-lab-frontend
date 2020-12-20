@@ -3,6 +3,7 @@
     <NavigationBar />
     <router-view class="main-view" />
     <!-- this is a test comment -->
+    <!-- this is a test comment -->
   </div>
 </template>
 
